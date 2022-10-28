@@ -2,10 +2,34 @@
 {% block main %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css') }}">
 
-<body class="mt-40">
+<body class="mt-40 text-white" style="background-color: black;">
     {% include "navbar.html" %}
+    <div class="flex flex-col justify-center items-center w-full mb-40">
+        <div class="flex flex-col justify-center items-start w-full mb-10" style="max-width: 80em;">
+            <p class="text-white text-5xl pb-4">About Me!</p>
+            <hr style="height:2px; width:31%; border-width:0; color:white; background-color:white;" class="mb-10">
+            <div class="flex flex-row justify-start items-start w-full">
 
-    <section class="mt-48">
+                <div class="flex flex-col justify-start items-start mr-32" style="height: 100%;">
+                    <p class="text-4xl mb-4 ml-10" style="font-family: 'Fuzzy Bubbles', serif;">Greetings!</p>
+                    <p class="text-2xl ml-10 mb-4" style="font-family: 'Fuzzy Bubbles', serif;">My Name is <span
+                            class="text-red-300 underline" style="font-family: 'Fuzzy Bubbles', serif;">Timothy
+                            Hu</span>, and I love creating.</p>
+                    <p class="text-xl ml-10" style="font-family: 'Fuzzy Bubbles', serif; max-width: 25em;">I enjoy
+                        building with hardware
+                        and software, and below shows a gallery of
+                        the projects I
+                        worked on throughout high school.
+                        Feel free to take a look at the websites yourself!
+                    </p>
+                </div>
+                <img src="../static/img/IMG_4268.jpg" style="max-height: 15em;" alt="">
+                <img src="../static/img/IMG_4271.jpg" style="max-height: 15em;" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section class=" mt-48">
         <div class="container">
             <div class="carousel">
                 <input type="radio" name="slides" checked="checked" id="slide-1">
@@ -33,7 +57,7 @@
                             </div>
                             <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Christian Joudrey</span>                            
+                                <span class="credit">Photo: Christian Joudrey</span>
                             </figcaption>
                         </figure>
                     </li>
@@ -44,7 +68,7 @@
                             </div>
                             <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Steve Carter</span>                            
+                                <span class="credit">Photo: Steve Carter</span>
                             </figcaption>
                         </figure>
                     </li>
@@ -55,7 +79,7 @@
                             </div>
                             <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                                <span class="credit">Photo: Aleksandra Boguslawska</span>
                             </figcaption>
                         </figure>
                     </li>
@@ -66,7 +90,7 @@
                             </div>
                             <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Rosan Harmens</span>                            
+                                <span class="credit">Photo: Rosan Harmens</span>
                             </figcaption>
                         </figure>
                     </li>
@@ -77,11 +101,11 @@
                             </div>
                             <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Annie Spratt</span>                            
+                                <span class="credit">Photo: Annie Spratt</span>
                             </figcaption>
                         </figure>
                     </li>
-                </ul>    
+                </ul>
                 <ul class="carousel__thumbnails">
                     <li>
                         <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
