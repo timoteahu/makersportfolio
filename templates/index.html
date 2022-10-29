@@ -5,7 +5,7 @@
 <body class="mt-48 text-white" style="background-color: black;">
     {% include "navbar.html" %}
 
-    <div class="flex flex-col justify-center items-center w-full mb-48">
+    <div class="flex flex-col justify-center items-center w-full mb-48" id="about">
         <div class="flex flex-col justify-start items-start w-full" style="max-width: 70em;">
             <p class="text-white text-5xl pb-4">About Me!</p>
             <hr style="height:2px; width:31%; border-width:0; color:white; background-color:white;" class="mb-8">
@@ -35,7 +35,7 @@
         
     </div>
 
-    <div class="flex flex-col justify-center items-center w-full">
+    <div class="flex flex-col justify-center items-center w-full" id="websites">
         <div class="flex flex-col justify-start items-start w-full" style="max-width: 70em;">
             <p class="text-white text-5xl pb-4">My Websites</p>
             <hr style="height:2px; width:31%; border-width:0; color:white; background-color:white;" class="mb-10">
@@ -116,11 +116,51 @@
 
     </div>
 
-    <div class="flex flex-col justify-center items-center w-full">
+    <div class="flex flex-col justify-center items-center w-full" id="other">
         <div class="flex flex-col justify-start items-start w-full" style="max-width: 70em;">
             <p class="text-white text-5xl pb-4">Other Projects</p>
             <hr style="height:2px; width:31%; border-width:0; color:white; background-color:white;" class="mb-8">
         </div>
+
+        <p class="text-4xl mb-12" style="font-family: 'Arvo', serif;">Hardware (Robotics)</p>
+        <div class="flex flex-wrap justify-center items-center mb-12">
+            <div class="flex flex-col justify-center items-center mr-10 mb-6">
+            <img src="../static/img/hardware/robot1.jpg" style=" min-height: 10em;  max-height: 20em;" class="mb-4" alt="">
+            <a href="https://docs.google.com/document/d/1itnYYhYyn5KVXnHs_D-aBqUnRtm4yrrznGUwL4pS_t4/edit?usp=sharing" class="text-3xl text-blue-300">How We Made It</a>
+            </div>
+
+            <div class="flex flex-col justify-center items-center mr-10 mb-6">
+                <img src="../static/img/hardware/robot2.jpg" style="min-height: 10em; max-height: 20em;" class="mb-4" alt="">
+                <a href="https://docs.google.com/document/d/1zjJuuucObEHgk_z8lem5zhlMT6ivP1qMBHGnzTB2YTw/edit?usp=sharing" class="text-3xl text-blue-300">How We Made It</a>
+                </div>
+            
+                <div class="flex flex-col justify-center items-center mr-10 mb-6">
+                    <img src="../static/img/hardware/robot3.jpg" style="min-height: 10em;  max-height: 20em;" class="mb-4" alt="">
+                    <a href="https://docs.google.com/document/d/1n3A-tCs_V9-ynF6LDd3P-jpU-RlJfqmhjXqUTEeT8ms/edit?usp=sharing" class="text-3xl text-blue-300">How We Made It</a>
+                    </div>
+        </div>
+
+        <p class="text-4xl mb-12" style="font-family: 'Arvo', serif;">Mobile Applications</p>
+
+        <div class="flex flex-row justify-start items-start w-full mb-4"  style="max-width: 30em;">
+            <a  style="border: 1px solid white;"><img class="website" style="max-height: 20em;" src="../static/img/apps/country.png" alt=""></a>
+            <div class="flex flex-col justify-center items-center" style="max-width: 20em;">
+                <p class="text-3xl font-bold mb-4" style="font-family: 'Lora', serif;">CountryMania</p>
+                <p class="text-xl mx-4 mb-4 text-center">A tool I created to help better improve my geography skills, while learning flags and leaders in the process. </p>
+            </div>
+        </div>
+        <a href="https://github.com/timoteahu/CountryMania" class="mb-12 text-blue-300">Here is the link to the github for the code.</a>
+
+        <div class="flex flex-row justify-start items-start w-full mb-4"  style="max-width: 30em;">
+            <a  style="border: 1px solid white;"><img class="website" style="max-height: 20em;" src="../static/img/apps/vertible.png" alt=""></a>
+            <div class="flex flex-col justify-center items-center" style="max-width: 20em;">
+                <p class="text-3xl font-bold mb-4" style="font-family: 'Lora', serif;">Vertible Application</p>
+                <p class="text-xl mx-4 mb-4 text-center">A tool I helped design in order to track carbon emissions and reward users with in-app tokens and helping the environment.</p>
+                <p class="text-sm text-center">**Video recorded by one of my other people in the Vertible initiative**</p>
+            </div>
+        </div>
+        <iframe class="mb-10" width="500" height="230" src="https://www.youtube.com/embed/aKgmJiqoyXM">
+        </iframe>
     </div>
 
 
