@@ -2,135 +2,135 @@
 {% block main %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css') }}">
 
-<body class="mt-40 text-white" style="background-color: black;">
+<body class="mt-48 text-white" style="background-color: black;">
     {% include "navbar.html" %}
-    <div class="flex flex-col justify-center items-center w-full mb-40">
-        <div class="flex flex-col justify-center items-start w-full mb-10" style="max-width: 80em;">
-            <p class="text-white text-5xl pb-4">About Me!</p>
-            <hr style="height:2px; width:31%; border-width:0; color:white; background-color:white;" class="mb-10">
-            <div class="flex flex-row justify-start items-start w-full">
 
-                <div class="flex flex-col justify-start items-start mr-32" style="height: 100%;">
-                    <p class="text-4xl mb-4 ml-10" style="font-family: 'Fuzzy Bubbles', serif;">Greetings!</p>
-                    <p class="text-2xl ml-10 mb-4" style="font-family: 'Fuzzy Bubbles', serif;">My Name is <span
-                            class="text-red-300 underline" style="font-family: 'Fuzzy Bubbles', serif;">Timothy
-                            Hu</span>, and I love creating.</p>
-                    <p class="text-xl ml-10" style="font-family: 'Fuzzy Bubbles', serif; max-width: 25em;">I enjoy
-                        building with hardware
-                        and software, and below shows a gallery of
-                        the projects I
-                        worked on throughout high school.
-                        Feel free to take a look at the websites yourself!
-                    </p>
-                </div>
-                <img src="../static/img/IMG_4268.jpg" style="max-height: 15em;" alt="">
-                <img src="../static/img/IMG_4271.jpg" style="max-height: 15em;" alt="">
+    <div class="flex flex-col justify-center items-center w-full mb-48">
+        <div class="flex flex-col justify-start items-start w-full" style="max-width: 70em;">
+            <p class="text-white text-5xl pb-4">About Me!</p>
+            <hr style="height:2px; width:31%; border-width:0; color:white; background-color:white;" class="mb-8">
+        </div>
+
+        <div class="flex flex-col xl:flex-row justify-center items-center w-full" style="max-width: 75em;">
+            <div class="flex flex-col justify-center xl:justify-start items-center xl:items-start w-full mb-10 xl:mr-48 mt-4" style=" max-width: 75em;">
+                <p class="text-4xl mb-4 md:ml-10" style="font-family: 'Fuzzy Bubbles', serif;">Greetings!</p>
+                <p class="text-2xl md:ml-10 mb-4" style="font-family: 'Fuzzy Bubbles', serif;">My Name is <span
+                        class="text-red-300 underline" style="font-family: 'Fuzzy Bubbles', serif;">Timothy
+                        Hu</span>, and I love creating.</p>
+                <p class="text-xl md:ml-10" style="font-family: 'Fuzzy Bubbles', serif; max-width: 25em;">I enjoy
+                            building with hardware
+                            and software, and the galleries below shows
+                            the projects I
+                            worked on throughout high school.
+                            Feel free to take a look at the websites that were made from scratch and the other projects for yourself!
+                </p>
             </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center w-full" style="max-width: 40em;">
+            <img src="../static/img/timothy1.jpg" style="max-height: 21em;" alt="">
+            <img src="../static/img/timothy2.jpg" style="max-height: 21em;" alt="">
+            <img src="../static/img/timothy3.png" style="max-height: 21em;" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="flex flex-col justify-center items-center w-full">
+        <div class="flex flex-col justify-start items-start w-full" style="max-width: 70em;">
+            <p class="text-white text-5xl pb-4">My Websites</p>
+            <hr style="height:2px; width:31%; border-width:0; color:white; background-color:white;" class="mb-10">
+        </div>
+
+        <p class="text-4xl mb-12" style="font-family: 'Arvo', serif;">My Initiatives</p>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://www.launchhacks.net" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/launchhacks.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">LaunchHacks</span> - A high school run hackathon I started to help spread the ideas of innovation and technology to beginner coders.</p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://www.webupservices.org" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/webup.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">WebUp</span> - An initiative to help people within my community start projects/organizations through the power of a foundational website. </p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://www.jixiaoproductions.com" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/jixiao.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">Jixiao Productions</span> - A brand I helped start to bring light to Asian heritage and the cultures amongst them as well. </p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://www.vertible.org" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/vertible.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">Vertible</span> - A website used to brand our application that helps reduce carbon emission by incentivizing less car use. </p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://www.62019a.com" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/62019A.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">VEX Robotics Team</span> - A website for the robotics I helped found, detailing our experiences and work.  </p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://www.engineeraid.org" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/engineeraid.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">EngineerAid</span> - An initiative to help spread the knowledge of engineering and the use of robotics around the nation.  </p>
+        </div>
+
+        
+
+
+
+        <p class="text-4xl mb-12" style="font-family: 'Arvo', serif;">Community Developed Websites</p>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://www.bimct.org" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/bimct.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">BIMCT</span> - A high school math competition I helped by crafting a website for their signups and format instructions.</p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://www.rohinghosh.com" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/rohinghosh.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">Personal Portfolio</span> - A custom tailored website for one of my peers designed in the way they wanted.</p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://comminhealth.herokuapp.com" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/comminhealth.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">Communications in Health</span> - A podcast I helped by creating a website to host their platforms and show off their episodes.</p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://www.nitinjaladanki.com" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/nitinjaladanki.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">Personal Portfolio</span> - A custom tailored website for one of my peers designed in the way they wanted.</p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://nhsweb.herokuapp.com" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/nhsweb.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">NHS Website</span> - A website I designed for my school NHS club to help track hours and join initiatives.</p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://www.rohinsbodybuilding.com" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/rohinsbody.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">Rohin's Bodybuilding Workshop</span> - A website to showcase the importance of bodybuilding and health to aspiring teens.</p>
+        </div>
+
+        <div class="flex flex-col justify-start items-start w-full mb-24"  style="max-width: 63em;">
+            <a href="https://alpha.nebulus.app/about" style="border: 1px solid white; max-width: 60em;" class="mb-6"><img class="website" src="../static/img/websites/nebulus.png" alt=""></a>
+            <p class="text-xl mx-4 mb-4"><span class="text-3xl font-bold" style="font-family: 'Lora', serif;">Nebulus</span> - A community application I contributed that serves as a multi-purpose utility application.</p>
+        </div>
+
+    </div>
+
+    <div class="flex flex-col justify-center items-center w-full">
+        <div class="flex flex-col justify-start items-start w-full" style="max-width: 70em;">
+            <p class="text-white text-5xl pb-4">Other Projects</p>
+            <hr style="height:2px; width:31%; border-width:0; color:white; background-color:white;" class="mb-8">
         </div>
     </div>
 
-    <section class=" mt-48">
-        <div class="container">
-            <div class="carousel">
-                <input type="radio" name="slides" checked="checked" id="slide-1">
-                <input type="radio" name="slides" id="slide-2">
-                <input type="radio" name="slides" id="slide-3">
-                <input type="radio" name="slides" id="slide-4">
-                <input type="radio" name="slides" id="slide-5">
-                <input type="radio" name="slides" id="slide-6">
-                <ul class="carousel__slides">
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1041/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Tim Marshall</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1043/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Christian Joudrey</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1044/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Steve Carter</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1045/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Aleksandra Boguslawska</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1049/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Rosan Harmens</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1052/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Annie Spratt</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-                <ul class="carousel__thumbnails">
-                    <li>
-                        <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <script type="text/javascript">
 
+
+    
+
+    
+
+    <script type="text/javascript">
+        
         const menuBtn = document.querySelector(".menu-btn");
         const navigation = document.querySelector(".navigation");
 
